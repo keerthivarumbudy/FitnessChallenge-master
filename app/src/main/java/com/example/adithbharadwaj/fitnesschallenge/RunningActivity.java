@@ -69,8 +69,6 @@ public class RunningActivity extends AppCompatActivity{
             public void onClick(View v) {
 
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Gty7rFrsnBg")));
-                Log.i("Video", "Video Playing....");
-
             }
         });
 

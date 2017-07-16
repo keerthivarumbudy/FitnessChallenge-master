@@ -43,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
         mheight = (EditText) findViewById(R.id.height);
         mweight = (EditText) findViewById(R.id.weight);
 
+        mheight.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
             Button sumbit = (Button) findViewById(R.id.submit);
 
@@ -118,3 +126,4 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
