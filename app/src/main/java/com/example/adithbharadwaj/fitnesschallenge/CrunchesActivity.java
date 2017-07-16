@@ -2,6 +2,7 @@ package com.example.adithbharadwaj.fitnesschallenge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -105,12 +106,22 @@ public class CrunchesActivity extends AppCompatActivity{
                 }
 
                 else {
+
                     noOfCrunches = mcrunches.getText().toString().trim();
 
                     Context context = getApplicationContext();
 
-                    Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(context, "Go to results to check your results", Toast.LENGTH_LONG);
                     toast.show();
+
+
+                    //Shared preferences
+
+                    SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("Crunches", noOfCrunches);
+                    editor.commit();
+
                 }
 
             }
@@ -120,9 +131,5 @@ public class CrunchesActivity extends AppCompatActivity{
 
     // method to get no of crunches
 
-    public String getNoOfCrunches(){
 
-        return noOfCrunches;
-
-    }
 }

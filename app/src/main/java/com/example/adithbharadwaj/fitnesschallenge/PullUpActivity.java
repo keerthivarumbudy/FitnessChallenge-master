@@ -2,6 +2,7 @@ package com.example.adithbharadwaj.fitnesschallenge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -112,6 +113,14 @@ public class PullUpActivity extends AppCompatActivity{
 
                     Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
                     toast.show();
+
+
+                    //Shared Preferences
+
+                    SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("PullUps", noOfPullUps);
+                    editor.commit();
                 }
 
             }
@@ -121,10 +130,5 @@ public class PullUpActivity extends AppCompatActivity{
 
     // method to get no of pullups
 
-    public String getNoOfPullUps(){
-
-        return noOfPullUps;
-
-    }
 }
 

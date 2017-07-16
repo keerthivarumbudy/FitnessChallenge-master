@@ -2,6 +2,7 @@ package com.example.adithbharadwaj.fitnesschallenge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -122,6 +123,14 @@ public class RunningActivity extends AppCompatActivity{
 
                     Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
                     toast.show();
+
+
+                    //Shared Preferences
+
+                    SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("Running", runningTime);
+                    editor.commit();
                 }
 
             }
@@ -131,12 +140,6 @@ public class RunningActivity extends AppCompatActivity{
 
     // method to get no of running time
 
-
-    public String getRunningTime(){
-
-        return runningTime;
-
-    }
 }
 
 

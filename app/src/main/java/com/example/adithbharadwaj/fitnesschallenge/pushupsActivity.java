@@ -2,9 +2,11 @@ package com.example.adithbharadwaj.fitnesschallenge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import static android.R.attr.mode;
 
 /**
  * Created by adith bharadwaj on 7/11/2017.
@@ -113,6 +117,16 @@ public class pushupsActivity extends AppCompatActivity{
 
                     Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
                     toast.show();
+
+
+                    // Shared preferences:
+
+                    SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("PushUps", noOfPushUps);
+                    editor.commit();
+
+
                 }
 
             }
@@ -120,11 +134,4 @@ public class pushupsActivity extends AppCompatActivity{
 
     }
 
-    // method to get no of pushups
-
-    public String getNoOfPushUps(){
-
-        return noOfPushUps;
-
-    }
 }

@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:hint="Enter the number of crunches"
+            android:hint="Enter the time taken"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="30dp"
             android:padding="20dp"
