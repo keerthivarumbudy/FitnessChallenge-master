@@ -1,5 +1,6 @@
 package com.example.adithbharadwaj.fitnesschallenge;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by adith bharadwaj on 7/11/2017.
@@ -18,11 +21,18 @@ import android.widget.TextView;
 public class pushupsActivity extends AppCompatActivity{
 
     private Button start;
+
     private TextView timer;
 
     private TextView btnvideo;
 
     public int count = 60;
+
+    public String noOfPushUps;
+
+    public  Button submit;
+
+    public EditText mpushups;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +84,47 @@ public class pushupsActivity extends AppCompatActivity{
             }
         });
 
+        submit = (Button) findViewById(R.id.submitchallenges);
+        submit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                mpushups = (EditText) findViewById(R.id.crunchestext);
+
+                String ed_text = mpushups.getText().toString().trim();
+
+                if(ed_text.isEmpty() || ed_text.length() == 0 || ed_text.equals("") || ed_text == null)
+                {
+                    //EditText is empty
+                    Context context = getApplicationContext();
+
+                    Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
+                    toast.show();
+
+                }
+
+                else {
+                    noOfPushUps = mpushups.getText().toString().trim();
+
+                    Log.i("no of pushups", noOfPushUps);
+
+                    Context context = getApplicationContext();
+
+                    Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+
+            }
+        });
+
     }
 
+    // method to get no of pushups
 
+    public String getNoOfPushUps(){
 
+        return noOfPushUps;
+
+    }
 }
