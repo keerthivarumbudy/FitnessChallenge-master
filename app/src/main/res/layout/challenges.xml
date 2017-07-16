@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"  >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd" >
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:text="CHALLENGES"
+    android:textAlignment="center"
+    style="@style/CustomText"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Push-Ups"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/pushup"
+        />
+
+
+    <TextView
+        android:id="@+id/squats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:text="Squats"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Planking"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/plank"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Running"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/running"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Pull-Ups"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/pullups"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Crunches"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/crunches"
+        />
+
+
+  </LinearLayout>
+</ScrollView>
