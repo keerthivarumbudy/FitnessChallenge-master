@@ -121,6 +121,7 @@ public class PlankActivity extends AppCompatActivity {
                 if(ed_text.isEmpty() || ed_text.length() == 0 || ed_text.equals("") || ed_text == null)
                 {
                     //EditText is empty
+
                     Context context = getApplicationContext();
 
                     Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
@@ -136,13 +137,13 @@ public class PlankActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
                     toast.show();
 
-
-                    //Shared Preferences
-
                     SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putString("Planks", noOfPlanks);
                     editor.commit();
+
+
+                    //Shared Preferences
 
                 }
 

@@ -106,6 +106,7 @@ public class pushupsActivity extends AppCompatActivity{
                     Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
                     toast.show();
 
+
                 }
 
                 else {
@@ -120,6 +121,7 @@ public class pushupsActivity extends AppCompatActivity{
 
 
                     // Shared preferences:
+
 
                     SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
                     SharedPreferences.Editor editor = prefs.edit();

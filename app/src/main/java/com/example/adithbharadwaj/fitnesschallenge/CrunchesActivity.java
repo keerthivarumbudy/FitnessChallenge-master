@@ -97,6 +97,7 @@ public class CrunchesActivity extends AppCompatActivity{
 
                 if(ed_text.isEmpty() || ed_text.length() == 0 || ed_text.equals("") || ed_text == null)
                 {
+
                     //EditText is empty
                     Context context = getApplicationContext();
 
@@ -115,12 +116,14 @@ public class CrunchesActivity extends AppCompatActivity{
                     toast.show();
 
 
-                    //Shared preferences
-
                     SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putString("Crunches", noOfCrunches);
                     editor.commit();
+
+
+                    //Shared preferences
+
 
                 }
 

@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.R.attr.id;
+import static android.R.attr.track;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 import static com.example.adithbharadwaj.fitnesschallenge.R.string.pushups;
 
@@ -45,6 +47,18 @@ public class Result extends AppCompatActivity{
 
     private TextView SquatResult;
 
+    public int mpush;
+
+    public int mpull;
+
+    public int mplank;
+
+    public int mrun;
+
+    public int msquat;
+
+    public int mcrunch;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,19 +69,36 @@ public class Result extends AppCompatActivity{
         SharedPreferences prefs = getSharedPreferences("results",
                 MODE_PRIVATE);
 
+        //push-ups
 
-         pushUps = prefs.getString("PushUps",
-                "");
+            pullUps = prefs.getString("PullUps", "");
 
-        pullUps = prefs.getString("PullUps", "");
+        //pull-ups
 
-        crunches = prefs.getString("Crunches", "");
+            pushUps = prefs.getString("PushUps",
+                    "");
 
-        squats = prefs.getString("Squats", "");
+        //crunches
 
-        running = prefs.getString("Running", "");
 
-        plank = prefs.getString("Planks", "");
+            crunches = prefs.getString("Crunches", "");
+
+        //squats
+
+            squats = prefs.getString("Squats", "");
+
+
+
+        //running
+
+
+            running = prefs.getString("Running", "");
+
+        //planks
+
+
+            plank = prefs.getString("Planks", "");
+
 
         // reference variables
 
@@ -84,52 +115,56 @@ public class Result extends AppCompatActivity{
         PlankResult = (TextView) findViewById(R.id.plankResult);
 
 
-      /**  if(     pushUps.isEmpty() || pushUps.length() == 0 || pushUps.equals("") || pushUps == null ||
+      //push up
 
-                crunches.isEmpty() || crunches .length() == 0 || crunches .equals("") || crunches  == null ||
 
-                pullUps.isEmpty() || pullUps.length() == 0 || pullUps.equals("") || pullUps == null ||
-
-                squats.isEmpty() || squats.length() == 0 || squats.equals("") || squats == null ||
-
-                running.isEmpty() || running.length() == 0 || running.equals("") || running == null ||
-
-                plank.isEmpty() || plank.length() == 0 || plank.equals("") || plank == null ){
-
-            Context context = getApplicationContext();
-
-            Toast toast = Toast.makeText(context, "please go to challenges and complete them for your results", Toast.LENGTH_LONG);
-            toast.show();
-
+        try{
+            mpush = Integer.parseInt(pushUps);
+        }catch(NumberFormatException ex){ // handle your exception
+            pushResult.setText("Nothing to display yet");
         }
-       */
 
 
+        if(pushUps == null){
+            pushResult.setText("nothing to display yet");
+        }
 
-      //push ups
+        if(mpush <= 4){
+                pushResult.setText("you did " + mpush + " pushups. you are very poor. click on goals to improve.");
+           }
 
-            int mpush = Integer.parseInt(pushUps);
-
-            if(mpush <= 4){
-                pushResult.setText("you did " + pushUps + " pushups. you are very poor. click on goals to improve.");
-            }
-
-            if(mpush <= 18 && mpush >= 10){
+        if(mpush <= 18 && mpush >= 10){
                 pushResult.setText("you did " + pushUps + " pushups. you are below average. click on goals to improve.");
             }
 
-            if(mpush <= 34 && mpush >= 19){
+        if(mpush <= 34 && mpush >= 19){
                 pushResult.setText("you did " + pushUps + " pushups. you are good. click on goals to improve.");
             }
 
-            if(mpush >= 35){
+        if(mpush >= 35){
                 pushResult.setText("you did " + pushUps + " pushups. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
+
             //pull ups
 
-        int mpull = Integer.parseInt(pullUps);
+        try{
+             mpull = Integer.parseInt(pullUps);
+        }catch(NumberFormatException ex){ // handle your exception
+            pullResult.setText("Nothing to display yet");
+        }
+
+
+
+        if(pushUps.toString().trim() == null || pushUps.toString().trim().equals("") || pushUps.toString().trim().isEmpty()){
+            pushResult.setText("nothing to display yet");
+        }
+
+
+        if(pullUps == null){
+            pullResult.setText("nothing to display yet");
+        }
 
         if(mpull <= 1){
             pullResult.setText("You did " + pullUps + " Pull-ups. you are very poor. click on goals to improve.");
@@ -147,9 +182,24 @@ public class Result extends AppCompatActivity{
             pullResult.setText("You did " + pullUps + " Pull-ups. you are excellent. click on goals to improve. but you don't need to, do you? ");
         }
 
+
+
         //Crunches
 
-        int mcrunch = Integer.parseInt(crunches);
+        try{
+            mcrunch = Integer.parseInt(crunches);
+        }catch(NumberFormatException ex){ // handle your exception
+            Log.e("", "");
+        }
+
+        if(pullUps.toString().trim() == null || pullUps.toString().trim().equals("") || pullUps.toString().trim().isEmpty()){
+            pullResult.setText("nothing to display yet");
+        }
+
+
+        if(mcrunch == -1){
+            CrunchResult.setText("Nothing to display yet");
+        }
 
         if(mcrunch <= 18){
             CrunchResult.setText("You did " + crunches + " crunches. you are very poor. click on goals to improve.");
@@ -170,7 +220,16 @@ public class Result extends AppCompatActivity{
 
         //Planks
 
-        int mplank = Integer.parseInt(plank);
+        try{
+            mplank = Integer.parseInt(plank);
+        }catch(NumberFormatException ex){ // handle your exception
+            Log.e("", "");
+        }
+
+        if(crunches.toString().trim() == null || crunches.toString().trim().equals("") || crunches.toString().trim().isEmpty()){
+           CrunchResult.setText("nothing to display yet");
+        }
+
 
         if(mplank <= 30){
             PlankResult.setText("You did plank for " + plank + " seconds. you are very poor. click on goals to improve.");
@@ -190,8 +249,16 @@ public class Result extends AppCompatActivity{
 
         //Running
 
+        try{
+            mrun = Integer.parseInt(running);
+        }catch(NumberFormatException ex){ // handle your exception
+            Log.e("", "");
+        }
 
-        int mrun = Integer.parseInt(running);
+        if(plank.toString().trim() == null || plank.toString().trim().equals("") || plank.toString().trim().isEmpty()){
+            PlankResult.setText("nothing to display yet");
+        }
+
 
         if(mrun >= 300){
             RunningResult.setText("You ran for " + running + " seconds. you are very poor. click on goals to improve.");
@@ -209,10 +276,19 @@ public class Result extends AppCompatActivity{
             RunningResult.setText("You ran for " + running + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
         }
 
+
         //Squats
 
+        try{
+            msquat = Integer.parseInt(squats);
+        }catch(NumberFormatException ex){ // handle your exception
+            Log.e("", "");
+        }
 
-        int msquat = Integer.parseInt(squats);
+        if(running.toString().trim() == null || running.toString().trim().equals("") || running.toString().trim().isEmpty()){
+            RunningResult.setText("nothing to display yet");
+        }
+
 
         if(msquat <= 20){
             SquatResult.setText("You did " + squats + " squats. you are very poor. but you can easily improve. click on goals to improve.");
@@ -230,6 +306,14 @@ public class Result extends AppCompatActivity{
             SquatResult.setText("You did " + squats + " squats. you are excellent. click on goals to improve. but you don't need to, do you? ");
         }
 
+        else if(msquat == -1){
+            SquatResult.setText("Nothing to display yet");
+        }
+
+
+        if(squats.toString().trim() == null || squats.toString().trim().equals("") || squats.toString().trim().isEmpty()){
+            SquatResult.setText("nothing to display yet");
+        }
 
     }
 }

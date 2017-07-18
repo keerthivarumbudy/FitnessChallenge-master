@@ -101,6 +101,7 @@ public class SquatsActivity extends AppCompatActivity{
                 if(ed_text.isEmpty() || ed_text.length() == 0 || ed_text.equals("") || ed_text == null)
                 {
                     //EditText is empty
+
                     Context context = getApplicationContext();
 
                     Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
@@ -133,9 +134,4 @@ public class SquatsActivity extends AppCompatActivity{
 
     // method to get no of squats
 
-    public String getNoOfSquats(){
-
-        return noOfSquats;
-
-    }
 }

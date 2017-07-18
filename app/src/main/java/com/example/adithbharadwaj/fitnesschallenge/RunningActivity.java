@@ -109,10 +109,10 @@ public class RunningActivity extends AppCompatActivity{
                 if(ed_text.isEmpty() || ed_text.length() == 0 || ed_text.equals("") || ed_text == null)
                 {
                     //EditText is empty
+
                     Context context = getApplicationContext();
 
                     Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
-                    toast.show();
 
                 }
 
