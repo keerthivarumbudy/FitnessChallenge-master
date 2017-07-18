@@ -13,8 +13,7 @@
 
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
+
         android:layout_weight="1"
         android:id="@+id/challenges"
         android:background="@drawable/challenge"/>
@@ -27,8 +26,7 @@
 
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+
         android:layout_weight="1"
         android:id="@+id/goals"
         android:background="@drawable/goals"/>
@@ -40,8 +38,6 @@
 
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:id="@+id/results"
         android:background="@drawable/results"/>
