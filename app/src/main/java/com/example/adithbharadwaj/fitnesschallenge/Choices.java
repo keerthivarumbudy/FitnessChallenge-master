@@ -55,7 +55,7 @@ public class Choices extends AppCompatActivity {
         pb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent challenges = new Intent(Choices.this, PersonalBest.class);
+                Intent challenges = new Intent(Choices.this, personalbest.class);
                 startActivity(challenges);
             }
         });
