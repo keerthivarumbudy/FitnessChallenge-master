@@ -19,7 +19,7 @@
         android:text="CHALLENGES"
         android:textAlignment="center"
         style="@style/CustomText"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginTop="20dp"
         />
    <RelativeLayout

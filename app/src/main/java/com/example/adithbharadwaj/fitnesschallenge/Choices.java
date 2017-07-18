@@ -26,6 +26,7 @@ public class Choices extends AppCompatActivity {
 
         TextView challenges = (TextView) findViewById(R.id.challenges);
 
+
         challenges.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -49,7 +50,7 @@ public class Choices extends AppCompatActivity {
             }
         });
 
-        TextView pb = (TextView) findViewById(R.id.pb);
+      /**  TextView pb = (TextView) findViewById(R.id.pb);
 
         pb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,7 @@ public class Choices extends AppCompatActivity {
                 startActivity(challenges);
             }
         });
+       */
 
         TextView result = (TextView) findViewById(R.id.results);
 
