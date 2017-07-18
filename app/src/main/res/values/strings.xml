@@ -3,32 +3,32 @@
 
     <string name="pushups">
         Try to do as many push-ups as you can
-        in a minute. enter the number of push-ups below
+        in a minute. Enter the number of push-ups below.
     </string>
 
     <string name="pullups">
         Try to do as many pull-ups as you can
-        in a minute. enter the number of pull-ups below
+        in a minute. Enter the number of pull-ups below.
     </string>
 
     <string name="squats">
         Try to do as many squats as you can
-        in a minute. enter the number of squats below
+        in a minute. Enter the number of squats below.
     </string>
 
     <string name="running">
-        Try to run or jog for 1km and
-        note down the time taken to run 1km
+        Try to run or jog continuously for 1km and
+        note down the time taken to run 1km.
     </string>
 
     <string name="planks">
-        try to do a plank for as long as you can.
-        note down the time
+        Try to do a plank for as long as you can.
+        Note down the time.
     </string>
 
     <string name="crunches">
         Try to do as many crunches as you can
-        in a minute. enter the number of crunches below
+        in a minute. Enter the number of crunches below.
     </string>
 
 </resources>

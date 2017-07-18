@@ -6,13 +6,15 @@
 
     <TextView
 
-
+        android:paddingLeft="20dp"
+        android:textColor="#424242"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Challenges"
+        android:paddingTop="105dp"
 
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="25sp"
 
         android:layout_weight="1"
         android:id="@+id/challenges"
@@ -20,24 +22,29 @@
 
 
     <TextView
+        android:paddingLeft="20dp"
+        android:paddingTop="85dp"
+        android:textColor="#424242"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Goals"
 
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="25sp"
 
         android:layout_weight="1"
         android:id="@+id/goals"
         android:background="@drawable/goals"/>
 
     <TextView
+        android:paddingLeft="20dp"
+        android:textColor="#424242"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Results"
-
+        android:paddingTop="85dp"
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:layout_weight="1"
         android:id="@+id/results"
         android:background="@drawable/results"/>

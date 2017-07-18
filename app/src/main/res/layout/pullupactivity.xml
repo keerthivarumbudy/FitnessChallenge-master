@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ddd"
+
         >
 
         <TextView
@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:text="@string/pullups"
             android:padding="20dp"
+
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="17sp"
@@ -38,11 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/play"
-            android:text="play pull-up video tutorial"
+            android:text="Play Pull-Up video tutorial"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"
             android:padding="30dp"
-            android:background="#ffffff"
+            android:background="#BBDEFB"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20dp"
             android:textSize="20sp"
@@ -65,7 +66,8 @@
             android:layout_gravity="center_horizontal"
             android:text="START"
             android:layout_marginBottom="20dp"
-            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:background="#01579B"
             />
 
         <EditText

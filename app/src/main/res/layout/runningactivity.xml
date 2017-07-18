@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ddd"
+
         >
 
         <TextView
@@ -32,17 +32,18 @@
             android:textColor="@color/colorPrimary"
             android:textSize="17sp"
             android:layout_marginBottom="20dp"
+
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/play"
-            android:text="play running video tutorial"
+            android:text="Play Running video tutorial"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"
             android:padding="30dp"
-            android:background="#ffffff"
+            android:background="#BBDEFB"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20dp"
             android:textSize="20sp"
