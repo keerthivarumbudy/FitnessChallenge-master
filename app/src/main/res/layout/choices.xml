@@ -4,26 +4,25 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Challenges"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:id="@+id/challenges"
+            android:background="@drawable/challenge"/>
+
+
+
+
     <TextView
-
-
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Challenges"
-
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:id="@+id/challenges"
-        android:background="@drawable/challenge"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:text="Personal Best"
-
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
@@ -34,7 +33,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:text="Goals"
 
         android:layout_gravity="center_horizontal"
@@ -47,7 +46,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:text="Results"
 
         android:layout_gravity="center_horizontal"
