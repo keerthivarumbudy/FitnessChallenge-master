@@ -139,6 +139,70 @@ public class Goals  extends AppCompatActivity{
             Log.e("", "");
         }
 
+        //push-ups
+
+        if(pushUps.toString().trim() == null || pushUps.toString().trim().equals("") || pushUps.toString().trim().isEmpty()){
+            pushResult.setText("nothing to display yet");
+        }
+        else{
+            pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
+                    (mpush + 5) + " Push-Ups");
+        }
+
+        //pull-ups
+
+
+        if(pullUps.toString().trim() == null || pullUps.toString().trim().equals("") || pullUps.toString().trim().isEmpty()){
+            pullResult.setText("nothing to display yet");
+        }
+        else{
+            pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
+                    (mpull + 2) + " Pull-Ups");
+        }
+
+        //crunches
+
+
+        if(crunches.toString().trim() == null || crunches.toString().trim().equals("") || crunches.toString().trim().isEmpty()){
+            CrunchResult.setText("nothing to display yet");
+        }
+        else{
+            CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
+                    (mcrunch + 5) + " crunches");
+
+        }
+
+        //planks
+
+        if(plank.toString().trim() == null || plank.toString().trim().equals("") || plank.toString().trim().isEmpty()){
+            PlankResult.setText("nothing to display yet");
+        }
+        else{
+            PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
+                    (mplank + 30) + " seconds");
+        }
+
+        //running
+
+        if(running.toString().trim() == null || running.toString().trim().equals("") || running.toString().trim().isEmpty()){
+            RunningResult.setText("nothing to display yet");
+        }
+        else{
+            RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 20)
+                    + " seconds");
+
+        }
+
+        //squats
+
+        if(squats.toString().trim() == null || squats.toString().trim().equals("") || squats.toString().trim().isEmpty()){
+            SquatResult.setText("nothing to display yet");
+        }
+        else{
+
+            SquatResult.setText("you did " + msquat + " Squats " + "\n" + "your goal is to do " + (msquat + 5) + " Squats");
+
+        }
 
 
     }
