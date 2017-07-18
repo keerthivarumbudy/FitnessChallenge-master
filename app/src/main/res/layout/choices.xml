@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,9 +14,9 @@
         android:paddingLeft="20dp"
         android:textColor="#424242"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="200dp"
         android:text="Challenges"
-        android:paddingTop="105dp"
+        android:paddingTop="125dp"
 
         android:layout_gravity="center_horizontal"
         android:textSize="25sp"
@@ -21,12 +26,18 @@
         android:background="@drawable/challenge"/>
 
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#c0c0c0"/>
+
+
     <TextView
         android:paddingLeft="20dp"
-        android:paddingTop="85dp"
+        android:paddingTop="100dp"
         android:textColor="#424242"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="200dp"
         android:text="Goals"
 
         android:layout_gravity="center_horizontal"
@@ -36,11 +47,18 @@
         android:id="@+id/goals"
         android:background="@drawable/goals"/>
 
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#c0c0c0"/>
+
+
     <TextView
         android:paddingLeft="20dp"
         android:textColor="#424242"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="200dp"
         android:text="Results"
         android:paddingTop="85dp"
         android:layout_gravity="center_horizontal"
@@ -51,3 +69,4 @@
 
 
 </LinearLayout>
+    </ScrollView>
