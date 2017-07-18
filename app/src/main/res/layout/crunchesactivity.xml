@@ -46,6 +46,8 @@
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20dp"
             android:textSize="20sp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
             />
 
         <RelativeLayout
@@ -56,14 +58,14 @@
                 android:layout_height="50dp"
                 android:id="@+id/Timer"
                 android:src="@drawable/timer"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="135dp"
                 />
             <TextView
                 android:layout_toRightOf="@id/Timer"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/timer"
-                android:paddingLeft="10dp"
+                android:paddingLeft="12dp"
                 android:text="60"
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
