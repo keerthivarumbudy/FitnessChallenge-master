@@ -50,17 +50,30 @@
 
             />
 
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/timer"
-            android:paddingLeft="10dp"
-            android:text="60"
-            android:layout_gravity="center_horizontal"
-            android:textSize="20sp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="50dp"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Timer"
+                android:src="@drawable/timer"
+                android:layout_marginLeft="120dp"
+                />
+            <TextView
+                android:layout_toRightOf="@id/Timer"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:paddingLeft="10dp"
+                android:text="60"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,6 +84,8 @@
             android:textColor="#ffffff"
             android:background="#01579B"
             />
+
+
 
         <EditText
             android:layout_width="match_parent"
