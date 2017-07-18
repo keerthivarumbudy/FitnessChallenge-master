@@ -65,6 +65,7 @@ public class Result extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         SharedPreferences prefs = getSharedPreferences("results",
                 MODE_PRIVATE);

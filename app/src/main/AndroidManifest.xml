@@ -25,7 +25,8 @@
 
         <activity
             android:name=".Goals"
-            android:label="goals">
+            android:label="goals"
+            android:parentActivityName=".Choices"  >
         </activity>
 
         <activity
@@ -35,42 +36,50 @@
 
         <activity
             android:name=".Result"
-            android:label="result">
+            android:label="result"
+            android:parentActivityName=".Choices"  >
         </activity>
 
         <activity
             android:name=".challenges"
-            android:label="challenges">
+            android:label="challenges"
+            android:parentActivityName=".Choices"  >
         </activity>
 
         <activity
             android:name=".pushupsActivity"
-            android:label="push-ups">
+            android:label="push-ups"
+            android:parentActivityName=".challenges"  >
         </activity>
 
         <activity
             android:name=".CrunchesActivity"
-            android:label="Crunches">
+            android:label="Crunches"
+            android:parentActivityName=".challenges"   >
         </activity>
 
         <activity
             android:name=".PlankActivity"
-            android:label="Planks">
+            android:label="Planks"
+            android:parentActivityName=".challenges" >
         </activity>
 
         <activity
             android:name=".PullUpActivity"
-            android:label="pull-ups">
+            android:label="pull-ups"
+            android:parentActivityName=".challenges" >
         </activity>
 
         <activity
             android:name=".RunningActivity"
-            android:label="Running">
+            android:label="Running"
+            android:parentActivityName=".challenges" >
         </activity>
 
         <activity
             android:name=".SquatsActivity"
-            android:label="Squats">
+            android:label="Squats"
+            android:parentActivityName=".challenges" >
         </activity>
 
 

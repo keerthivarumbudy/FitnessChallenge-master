@@ -57,6 +57,8 @@ public class Goals  extends AppCompatActivity{
         setContentView(R.layout.goals);
 
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         SharedPreferences prefs = getSharedPreferences("results",
                 MODE_PRIVATE);
 
