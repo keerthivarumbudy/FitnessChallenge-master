@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/blue"  >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="'If it doesn't challege you. It doesn't change you '"
+        android:gravity="center"
+        android:paddingTop="120dp"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/challenge"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/actualman"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/blue"
+        android:id="@+id/iv"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FITNESS CHALLENGE"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+         android:id="@+id/splash"/>
+
+
+
+</LinearLayout>
