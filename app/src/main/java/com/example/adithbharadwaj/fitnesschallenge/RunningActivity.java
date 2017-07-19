@@ -44,7 +44,7 @@ public class RunningActivity extends AppCompatActivity{
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plankactivity);
+        setContentView(R.layout.runningactivity);
 
         start = (Button) findViewById(R.id.start);
         timer = (TextView)findViewById(R.id.timer);

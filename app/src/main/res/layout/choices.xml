@@ -4,33 +4,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#ddd">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dip"
+        android:background="@drawable/border_shadow"
+        android:orientation="vertical">
 
     <TextView
 
-        android:paddingLeft="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:textColor="#424242"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="Challenges"
         android:paddingTop="125dp"
-
         android:layout_gravity="center_horizontal"
         android:textSize="25sp"
-
         android:layout_weight="1"
         android:id="@+id/challenges"
         android:background="@drawable/challenge"/>
 
+</LinearLayout>
 
-    <View
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="3dp"
-        android:background="#c0c0c0"/>
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginBottom="4dip"
+        android:background="@drawable/border_shadow"
+        android:orientation="vertical">
 
     <TextView
         android:paddingLeft="20dp"
@@ -47,12 +58,17 @@
         android:id="@+id/goals"
         android:background="@drawable/goals"/>
 
+</LinearLayout>
 
-    <View
+
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="3dp"
-        android:background="#c0c0c0"/>
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginBottom="4dip"
+        android:background="@drawable/border_shadow"
+        android:orientation="vertical">
 
     <TextView
         android:paddingLeft="20dp"
@@ -67,6 +83,7 @@
         android:id="@+id/results"
         android:background="@drawable/results"/>
 
+    </LinearLayout>
 
 </LinearLayout>
     </ScrollView>

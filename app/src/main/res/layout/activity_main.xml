@@ -32,7 +32,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/border_shadow2"
         android:id="@+id/name"
         />
 
@@ -45,7 +45,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/border_shadow2"
         android:id="@+id/age"
         />
 
@@ -58,7 +58,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/border_shadow2"
         android:id="@+id/height"
         />
 
@@ -71,7 +71,8 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorPrimary"
+
+        android:background="@drawable/border_shadow2"
         android:id="@+id/weight"
         />
 
@@ -79,8 +80,10 @@ android:layout_height="match_parent">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
+        android:background="#01579B"
         android:layout_gravity="center_horizontal"
         android:textSize="16sp"
+        android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:id="@+id/submit" />
 
@@ -106,6 +109,7 @@ android:layout_height="match_parent">
         android:layout_gravity="center_horizontal"
         android:textSize="16sp"
         android:visibility="invisible"
+        android:background="@color/green"
         android:layout_marginBottom="30dp"
         />
 
