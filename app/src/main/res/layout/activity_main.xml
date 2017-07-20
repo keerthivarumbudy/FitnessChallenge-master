@@ -32,7 +32,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/border_shadow2"
+        android:background="@drawable/border_shadow"
         android:id="@+id/name"
         />
 
@@ -45,7 +45,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/border_shadow2"
+        android:background="@drawable/border_shadow"
         android:id="@+id/age"
         />
 
@@ -58,7 +58,7 @@ android:layout_height="match_parent">
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/border_shadow2"
+        android:background="@drawable/border_shadow"
         android:id="@+id/height"
         />
 
@@ -72,7 +72,7 @@ android:layout_height="match_parent">
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="24dp"
 
-        android:background="@drawable/border_shadow2"
+        android:background="@drawable/border_shadow"
         android:id="@+id/weight"
         />
 

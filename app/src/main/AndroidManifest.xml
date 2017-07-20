@@ -24,12 +24,12 @@
 
         <activity
             android:name=".Choices"
-            android:label="choices">
+            android:label="Main Menu">
         </activity>
 
         <activity
             android:name=".Goals"
-            android:label="goals"
+            android:label="Goals"
             android:parentActivityName=".Choices"  >
         </activity>
 
@@ -40,19 +40,19 @@
 
         <activity
             android:name=".Result"
-            android:label="result"
+            android:label="Result"
             android:parentActivityName=".Choices"  >
         </activity>
 
         <activity
             android:name=".challenges"
-            android:label="challenges"
+            android:label="Challenges"
             android:parentActivityName=".Choices"  >
         </activity>
 
         <activity
             android:name=".pushupsActivity"
-            android:label="push-ups"
+            android:label="Push-Ups"
             android:parentActivityName=".challenges"  >
         </activity>
 
@@ -70,7 +70,7 @@
 
         <activity
             android:name=".PullUpActivity"
-            android:label="pull-ups"
+            android:label="Pull-Ups"
             android:parentActivityName=".challenges" >
         </activity>
 

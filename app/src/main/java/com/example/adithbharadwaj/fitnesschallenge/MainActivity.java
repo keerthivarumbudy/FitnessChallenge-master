@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
         mheight = (EditText) findViewById(R.id.height);
         mweight = (EditText) findViewById(R.id.weight);
-
 
         Button sumbit = (Button) findViewById(R.id.submit);
 
@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+
         });
 
 
@@ -114,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(challenges);
 
             }
+
 
         });
 

@@ -118,7 +118,7 @@ public class pushupsActivity extends AppCompatActivity{
 
                     Context context = getApplicationContext();
 
-                    Toast toast = Toast.makeText(context, "your details have been successfully recorded", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(context, "Successfully submitted. checkout Results or Goals", Toast.LENGTH_LONG);
                     toast.show();
 
 

@@ -1,10 +1,12 @@
 package com.example.adithbharadwaj.fitnesschallenge;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -27,6 +29,8 @@ public class challenges extends AppCompatActivity{
 
         TextView pushup = (TextView) findViewById(R.id.pushup);
 
+        pushup.setOnTouchListener(new CustomTouchListener());
+
         pushup.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -38,6 +42,8 @@ public class challenges extends AppCompatActivity{
         });
 
         TextView pullup = (TextView) findViewById(R.id.pullups);
+
+        pullup.setOnTouchListener(new CustomTouchListener());
 
         pullup.setOnClickListener(new View.OnClickListener() {
 
@@ -51,6 +57,8 @@ public class challenges extends AppCompatActivity{
 
         TextView plank = (TextView) findViewById(R.id.plank);
 
+        plank.setOnTouchListener(new CustomTouchListener());
+
         plank.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -62,6 +70,8 @@ public class challenges extends AppCompatActivity{
         });
 
         TextView squats = (TextView) findViewById(R.id.squats);
+
+        squats.setOnTouchListener(new CustomTouchListener());
 
         squats.setOnClickListener(new View.OnClickListener() {
 
@@ -75,6 +85,8 @@ public class challenges extends AppCompatActivity{
 
         TextView crunches = (TextView) findViewById(R.id.crunches);
 
+        crunches.setOnTouchListener(new CustomTouchListener());
+
         crunches.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -86,6 +98,8 @@ public class challenges extends AppCompatActivity{
         });
 
         TextView running = (TextView) findViewById(R.id.running);
+
+        running.setOnTouchListener(new CustomTouchListener());
 
         running.setOnClickListener(new View.OnClickListener() {
 
@@ -110,4 +124,21 @@ public class challenges extends AppCompatActivity{
 
         return super.onOptionsItemSelected(item);
     }
+
+    public class CustomTouchListener implements View.OnTouchListener {
+        public boolean onTouch(View view, MotionEvent motionEvent) {
+            switch (motionEvent.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    ((TextView) view).setTextColor(0xFFFFFFFF); // white
+                    break;
+                case MotionEvent.ACTION_CANCEL:
+                case MotionEvent.ACTION_UP:
+                    ((TextView) view).setTextColor(Color.parseColor("#4a4a4a")); // lightblack
+                    break;
+            }
+            return false;
+        }
+    }
+
+
 }
