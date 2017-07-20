@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="#E3F2FD"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:layout_gravity="center"
@@ -14,27 +14,27 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="'If it doesn't challege you, It doesn't change you '"
+        android:text="'If it doesn't challenge you, It doesn't change you '"
         android:textSize="20sp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:id="@+id/challenge"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_above="@+id/iv"
+        android:textStyle="italic"
         android:gravity="center_horizontal"
-         />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/actualman"
-        android:layout_marginTop="15dp"
-        android:background="@color/blue"
+        android:src="@drawable/muscleman"
+        android:layout_marginTop="45dp"
+
         android:id="@+id/iv"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_below="@+id/challenge"
+        android:layout_centerHorizontal="true">
     </ImageView>
 
 
@@ -42,14 +42,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="FITNESS CHALLENGE"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"
         android:textSize="20sp"
         android:id="@+id/splash"
+        android:gravity="center_horizontal"
         android:layout_below="@+id/iv"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
 
 
 </RelativeLayout>

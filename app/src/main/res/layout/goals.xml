@@ -28,16 +28,17 @@
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:padding="20dp"
+        android:background="#FFCDD2"
           />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/PushUpGoals"
-        android:layout_marginBottom="20dp"  />
+        android:layout_marginBottom="40dp"  />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,21 +48,23 @@
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:padding="20dp"
+        android:background="#E1BEE7"
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/PullUpGoals"
-        android:layout_marginBottom="20dp"   />
+        android:layout_marginBottom="40dp"   />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Planking"
+        android:background="#FFCCBC"
         android:textSize="20sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
@@ -69,18 +72,19 @@
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/PlankGoals"
-        android:layout_marginBottom="20dp"   />
+        android:layout_marginBottom="40dp"   />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crunches"
+        android:background="#CCFF90"
         android:textSize="20sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
@@ -88,19 +92,20 @@
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/CrunchesGoals"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Running"
+        android:background="#90CAF9"
         android:textSize="20sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
@@ -109,18 +114,19 @@
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/RunningGoals"
-        android:layout_marginBottom="20dp"  />
+        android:layout_marginBottom="40dp"  />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Squats"
+        android:background="#FFF176"
         android:textSize="20sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
@@ -129,13 +135,13 @@
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No goals to display yet"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:id="@+id/SquatsGoals"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         />
 
 </LinearLayout>
