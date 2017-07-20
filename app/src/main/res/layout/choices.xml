@@ -10,12 +10,17 @@
     android:layout_height="match_parent"
     android:background="#ffffff">
 
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="0dip"
-        android:background="@drawable/border_shadow"
-        android:orientation="vertical">
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_shadow">
+
 
     <TextView
 
@@ -34,10 +39,15 @@
 
 </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border_shadow"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="2dp"
         android:orientation="vertical">
 
     <TextView
@@ -61,7 +71,9 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
         android:background="@drawable/border_shadow"
         android:orientation="vertical">
 
