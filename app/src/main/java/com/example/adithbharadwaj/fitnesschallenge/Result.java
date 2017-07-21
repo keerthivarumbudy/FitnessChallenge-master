@@ -175,7 +175,7 @@ public class Result extends AppCompatActivity{
             pullResult.setText("You did " + pullUps + " Pull-ups. you are average. click on goals to improve.");
         }
 
-        if(mpush <= 15 && mpull >= 7){
+        if(mpull <= 15 && mpull >= 7){
             pullResult.setText("You did " + pullUps + " Pull-ups. you are good. click on goals to improve.");
         }
 
@@ -269,11 +269,11 @@ public class Result extends AppCompatActivity{
             RunningResult.setText("You ran for " + running + " seconds. you are average. click on goals to improve.");
         }
 
-        if(mrun <= 241 && mrun >= 150){
+        if(mrun <= 241 && mrun >= 161){
             RunningResult.setText("You ran for " + running + " seconds. you are good. click on goals to improve.");
         }
 
-        if(mrun <= 149){
+        if(mrun <= 160){
             RunningResult.setText("You ran for " + running + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
         }
 

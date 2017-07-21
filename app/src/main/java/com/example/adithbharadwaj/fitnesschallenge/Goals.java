@@ -145,8 +145,14 @@ public class Goals  extends AppCompatActivity{
             pushResult.setText("nothing to display yet");
         }
         else{
-            pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
-                    (mpush + 5) + " Push-Ups");
+            if(mpush >= 50){
+                pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
+                        (mpush + 3) + " Push-Ups");
+            }
+            else {
+                pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
+                        (mpush + 6) + " Push-Ups");
+            }
         }
 
         //pull-ups
@@ -156,8 +162,14 @@ public class Goals  extends AppCompatActivity{
             pullResult.setText("nothing to display yet");
         }
         else{
-            pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
-                    (mpull + 2) + " Pull-Ups");
+            if(mpull >= 16){
+                pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
+                        (mpull + 2) + " Pull-Ups");
+            }
+           else {
+                pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
+                        (mpull + 4) + " Pull-Ups");
+            }
         }
 
         //crunches
@@ -167,9 +179,15 @@ public class Goals  extends AppCompatActivity{
             CrunchResult.setText("nothing to display yet");
         }
         else{
-            CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
-                    (mcrunch + 5) + " crunches");
 
+            if(mcrunch >= 50){
+                CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
+                        (mcrunch + 2) + " crunches");
+            }
+            else {
+                CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
+                        (mcrunch + 4) + " crunches");
+            }
         }
 
         //planks
@@ -178,8 +196,16 @@ public class Goals  extends AppCompatActivity{
             PlankResult.setText("nothing to display yet");
         }
         else{
-            PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
-                    (mplank + 30) + " seconds");
+
+            if(mplank >= 181){
+                PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
+                        (mplank + 5) + " seconds");
+            }
+
+            else {
+                PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
+                        (mplank + 10) + " seconds");
+            }
         }
 
         //running
@@ -188,6 +214,10 @@ public class Goals  extends AppCompatActivity{
             RunningResult.setText("nothing to display yet");
         }
         else{
+            if(mrun <= 160){
+                RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 5)
+                        + " seconds");
+            }
             RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 20)
                     + " seconds");
 
