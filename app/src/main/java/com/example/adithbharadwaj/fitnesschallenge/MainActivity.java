@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     //EditText is empty
                     Context context = getApplicationContext();
 
-                    Toast toast = Toast.makeText(context, "please enter the details", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(context, "Please enter the details", Toast.LENGTH_LONG);
                     toast.show();
 
                 }
@@ -106,19 +106,19 @@ public class MainActivity extends AppCompatActivity {
                 bmi = weight / (height / 100 * height / 100);
 
 
-                yourbmi = "your BMI is: " + bmi + "\n" + "A healthy bmi ranges from 19 to 25." + "\n";
+                yourbmi = "Your BMI is: " + bmi + "\n" + "A healthy BMI ranges from 19 to 25." + "\n";
 
                 if (bmi < 19) {
-                    message.setText(yourbmi + "you are underweight since your bmi is less than 19.");
+                    message.setText(yourbmi + "You are underweight since your BMI is less than 19.");
 
                 } else if (bmi > 25) {
-                    message.setText(yourbmi + "you are overweight since your bmi is lgreater than 25.");
+                    message.setText(yourbmi + "You are overweight since your BMI is lgreater than 25.");
 
                 } else if(bmi > 19 && bmi < 25){
-                    message.setText(yourbmi + "you are healthy since your bmi is between 19 and 25.");
+                    message.setText(yourbmi + "You are healthy since your BMI is between 19 and 25.");
                 }
                 else{
-                    message.setText("please enter the details so that we can measure your bmi(body-mass index)");
+                    message.setText("Please enter the details so that we can measure your BMI(body-mass index)");
                 }
 
                 next.setVisibility(View.VISIBLE);
