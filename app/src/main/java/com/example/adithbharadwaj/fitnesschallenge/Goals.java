@@ -149,14 +149,10 @@ public class Goals  extends AppCompatActivity{
             pushResult.setText("nothing to display yet");
         }
         else{
-            if(mpush >= 50){
-                pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
-                        (mpush + 3) + " Push-Ups");
-            }
-            else {
-                pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
-                        (mpush + 6) + " Push-Ups");
-            }
+            ((TextView) findViewById(R.id.PushUpGoals)).setTextSize(30);
+
+            pushResult.setText("You did " + mpush + " Push-Ups" + "\n" + " Your goal is to do " +
+                    (mpush + 5) + " Push-Ups");
         }
 
         //pull-ups
@@ -166,14 +162,9 @@ public class Goals  extends AppCompatActivity{
             pullResult.setText("nothing to display yet");
         }
         else{
-            if(mpull >= 16){
-                pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
-                        (mpull + 2) + " Pull-Ups");
-            }
-           else {
-                pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
-                        (mpull + 4) + " Pull-Ups");
-            }
+            ((TextView) findViewById(R.id.PullUpGoals)).setTextSize(30);
+            pullResult.setText("You did " + mpull + " Pull-Ups" + "\n" + " Your goal is to do " +
+                    (mpull + 2) + " Pull-Ups");
         }
 
         //crunches
@@ -183,15 +174,10 @@ public class Goals  extends AppCompatActivity{
             CrunchResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.CrunchesGoals)).setTextSize(30);
+            CrunchResult.setText("You did " + mcrunch + " Crunches " + "\n" + "Your goal is to do " +
+                    (mcrunch + 5) + " crunches");
 
-            if(mcrunch >= 50){
-                CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
-                        (mcrunch + 2) + " crunches");
-            }
-            else {
-                CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
-                        (mcrunch + 4) + " crunches");
-            }
         }
 
         //planks
@@ -200,16 +186,9 @@ public class Goals  extends AppCompatActivity{
             PlankResult.setText("nothing to display yet");
         }
         else{
-
-            if(mplank >= 181){
-                PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
-                        (mplank + 5) + " seconds");
-            }
-
-            else {
-                PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
-                        (mplank + 10) + " seconds");
-            }
+            ((TextView) findViewById(R.id.PlankGoals)).setTextSize(30);
+            PlankResult.setText("You did Plank for " + mplank + " seconds " + "\n" + "Your goal is to do planks for " +
+                    (mplank + 30) + " seconds");
         }
 
         //running
@@ -218,11 +197,8 @@ public class Goals  extends AppCompatActivity{
             RunningResult.setText("nothing to display yet");
         }
         else{
-            if(mrun <= 160){
-                RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 5)
-                        + " seconds");
-            }
-            RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 20)
+            ((TextView) findViewById(R.id.RunningGoals)).setTextSize(30);
+            RunningResult.setText("You ran 1km in " + mrun + " seconds " + "\n" + "Your goal is to run 1k in " + (mrun - 20)
                     + " seconds");
 
         }
@@ -233,8 +209,9 @@ public class Goals  extends AppCompatActivity{
             SquatResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.SquatsGoals)).setTextSize(30);
 
-            SquatResult.setText("you did " + msquat + " Squats " + "\n" + "your goal is to do " + (msquat + 5) + " Squats");
+            SquatResult.setText("You did " + msquat + " Squats " + "\n" + "Your goal is to do " + (msquat + 5) + " Squats");
 
         }
 

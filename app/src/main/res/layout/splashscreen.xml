@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD"
+    android:background="#01579B"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:layout_gravity="center"
@@ -24,35 +24,23 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp" />
+        android:layout_marginTop="43dp"
+        android:textColor="#ffff"/>
 
     <ImageView
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="400dp"
         android:src="@drawable/actualman"
-        android:layout_marginTop="45dp"
 
         android:id="@+id/iv"
-        android:layout_below="@+id/challenge"
+        android:layout_marginTop="33dp"
+        android:layout_alignTop="@+id/challenge"
         android:layout_centerHorizontal="true">
     </ImageView>
 
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="FITNESS CHALLENGE"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:textSize="20sp"
-        android:id="@+id/splash"
-        android:gravity="center_horizontal"
-        android:layout_below="@+id/iv"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp" />
+
 
 
 </RelativeLayout>
