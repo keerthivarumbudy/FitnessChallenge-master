@@ -30,5 +30,12 @@
         Try to do as many crunches as you can
         in a minute. Enter the number of crunches below.
     </string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
 
 </resources>

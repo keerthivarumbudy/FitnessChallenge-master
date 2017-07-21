@@ -4,14 +4,18 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText mage;
     private EditText mheight;
     private EditText mweight;
+    public String Gen;
+
+
 
     private TextView message;
 
@@ -45,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
 
         mheight = (EditText) findViewById(R.id.height);
         mweight = (EditText) findViewById(R.id.weight);
+
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.gender, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+
+        Gen = spinner.getSelectedItem().toString();
+        SharedPreferences prefs = getSharedPreferences("results", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("gender", Gen);
+        editor.commit();
 
         Button sumbit = (Button) findViewById(R.id.submit);
 
