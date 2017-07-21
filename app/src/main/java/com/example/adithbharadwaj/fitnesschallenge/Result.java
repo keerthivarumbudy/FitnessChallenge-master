@@ -293,7 +293,7 @@ public class Result extends AppCompatActivity{
             }
 
             if(running.toString().trim() == null || running.toString().trim().equals("") || running.toString().trim().isEmpty()){
-                RunningResult.setText("nothing to display yet");
+                RunningResult.setText("Nothing to display yet");
             }
 
 
