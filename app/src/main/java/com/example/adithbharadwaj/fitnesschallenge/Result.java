@@ -310,10 +310,6 @@ public class Result extends AppCompatActivity{
             SquatResult.setText("You did " + squats + " squats. you are excellent. click on goals to improve. but you don't need to, do you? ");
         }
 
-        else if(msquat == -1){
-            SquatResult.setText("Nothing to display yet");
-        }
-
 
         if(squats.toString().trim() == null || squats.toString().trim().equals("") || squats.toString().trim().isEmpty()){
             SquatResult.setText("nothing to display yet");
