@@ -45,6 +45,8 @@
                    android:layout_gravity="center_horizontal"
                    android:layout_marginBottom="15dp"
                    android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
                    android:id="@+id/pushUpResult"/>
 
         <View
@@ -76,6 +78,8 @@
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/pullUpResult"  />
 
@@ -108,6 +112,8 @@
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/crunchesResult" />
 
@@ -140,6 +146,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/squatsResult"  />
 
 
@@ -172,6 +180,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/RunningResult"  />
 
         <View
@@ -202,6 +212,8 @@
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/plankResult" />
 
