@@ -145,6 +145,8 @@ public class Goals  extends AppCompatActivity{
             pushResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.PushUpGoals)).setTextSize(30);
+
             pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
                     (mpush + 5) + " Push-Ups");
         }
@@ -156,6 +158,7 @@ public class Goals  extends AppCompatActivity{
             pullResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.PullUpGoals)).setTextSize(30);
             pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
                     (mpull + 2) + " Pull-Ups");
         }
@@ -167,6 +170,7 @@ public class Goals  extends AppCompatActivity{
             CrunchResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.CrunchesGoals)).setTextSize(30);
             CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
                     (mcrunch + 5) + " crunches");
 
@@ -178,6 +182,7 @@ public class Goals  extends AppCompatActivity{
             PlankResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.PlankGoals)).setTextSize(30);
             PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
                     (mplank + 30) + " seconds");
         }
@@ -188,6 +193,7 @@ public class Goals  extends AppCompatActivity{
             RunningResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.RunningGoals)).setTextSize(30);
             RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 20)
                     + " seconds");
 
@@ -199,6 +205,7 @@ public class Goals  extends AppCompatActivity{
             SquatResult.setText("nothing to display yet");
         }
         else{
+            ((TextView) findViewById(R.id.SquatsGoals)).setTextSize(30);
 
             SquatResult.setText("you did " + msquat + " Squats " + "\n" + "your goal is to do " + (msquat + 5) + " Squats");
 

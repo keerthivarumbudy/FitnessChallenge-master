@@ -22,7 +22,6 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
 
-        splash = (TextView)findViewById(R.id.splash);
         iv = (ImageView)findViewById(R.id.iv);
         challenge = (TextView) findViewById(R.id.challenge);
 
@@ -32,7 +31,7 @@ public class SplashScreen extends AppCompatActivity {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
 
         iv.startAnimation(anim);
-        splash.startAnimation(anim);
+
         challenge.startAnimation(anim2);
 
         Thread myThread = new Thread(){
