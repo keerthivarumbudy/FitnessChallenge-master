@@ -7,6 +7,9 @@ import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -317,4 +320,27 @@ public class Result extends AppCompatActivity{
         }
 
     }
+
+ /**   @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater mmenu = getMenuInflater();
+        mmenu.inflate(R.menu.menu_activity, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.settings:
+
+                SharedPreferences preferences = getSharedPreferences("results", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.clear();
+                editor.commit();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+*/
 }
