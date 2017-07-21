@@ -147,7 +147,7 @@ public class Goals  extends AppCompatActivity{
         else{
             ((TextView) findViewById(R.id.PushUpGoals)).setTextSize(30);
 
-            pushResult.setText("you did " + mpush + " Push-Ups" + "\n" + " your goal is to do " +
+            pushResult.setText("You did " + mpush + " Push-Ups" + "\n" + " Your goal is to do " +
                     (mpush + 5) + " Push-Ups");
         }
 
@@ -159,7 +159,7 @@ public class Goals  extends AppCompatActivity{
         }
         else{
             ((TextView) findViewById(R.id.PullUpGoals)).setTextSize(30);
-            pullResult.setText("you did " + mpull + " Pull-Ups" + "\n" + " your goal is to do " +
+            pullResult.setText("You did " + mpull + " Pull-Ups" + "\n" + " Your goal is to do " +
                     (mpull + 2) + " Pull-Ups");
         }
 
@@ -171,7 +171,7 @@ public class Goals  extends AppCompatActivity{
         }
         else{
             ((TextView) findViewById(R.id.CrunchesGoals)).setTextSize(30);
-            CrunchResult.setText("you did " + mcrunch + " Crunches " + "\n" + "your goal is to do " +
+            CrunchResult.setText("You did " + mcrunch + " Crunches " + "\n" + "Your goal is to do " +
                     (mcrunch + 5) + " crunches");
 
         }
@@ -183,7 +183,7 @@ public class Goals  extends AppCompatActivity{
         }
         else{
             ((TextView) findViewById(R.id.PlankGoals)).setTextSize(30);
-            PlankResult.setText("you did Plank for " + mplank + " seconds " + "\n" + "your goal is to do planks for " +
+            PlankResult.setText("You did Plank for " + mplank + " seconds " + "\n" + "Your goal is to do planks for " +
                     (mplank + 30) + " seconds");
         }
 
@@ -194,7 +194,7 @@ public class Goals  extends AppCompatActivity{
         }
         else{
             ((TextView) findViewById(R.id.RunningGoals)).setTextSize(30);
-            RunningResult.setText("you ran 1k in " + mrun + " seconds " + "\n" + "your goal is to run 1k in " + (mrun - 20)
+            RunningResult.setText("You ran 1km in " + mrun + " seconds " + "\n" + "Your goal is to run 1k in " + (mrun - 20)
                     + " seconds");
 
         }
@@ -207,7 +207,7 @@ public class Goals  extends AppCompatActivity{
         else{
             ((TextView) findViewById(R.id.SquatsGoals)).setTextSize(30);
 
-            SquatResult.setText("you did " + msquat + " Squats " + "\n" + "your goal is to do " + (msquat + 5) + " Squats");
+            SquatResult.setText("You did " + msquat + " Squats " + "\n" + "Your goal is to do " + (msquat + 5) + " Squats");
 
         }
 
