@@ -149,7 +149,7 @@ public class Goals  extends AppCompatActivity{
             pushResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.PushUpGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.PushUpGoals)).setTextSize(24);
 
             pushResult.setText("You did " + mpush + " Push-Ups" + "\n" + " Your goal is to do " +
                     (mpush + 5) + " Push-Ups");
@@ -162,7 +162,7 @@ public class Goals  extends AppCompatActivity{
             pullResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.PullUpGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.PullUpGoals)).setTextSize(24);
             pullResult.setText("You did " + mpull + " Pull-Ups" + "\n" + " Your goal is to do " +
                     (mpull + 2) + " Pull-Ups");
         }
@@ -174,7 +174,7 @@ public class Goals  extends AppCompatActivity{
             CrunchResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.CrunchesGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.CrunchesGoals)).setTextSize(24);
             CrunchResult.setText("You did " + mcrunch + " Crunches " + "\n" + "Your goal is to do " +
                     (mcrunch + 5) + " crunches");
 
@@ -186,7 +186,7 @@ public class Goals  extends AppCompatActivity{
             PlankResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.PlankGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.PlankGoals)).setTextSize(24);
             PlankResult.setText("You did Plank for " + mplank + " seconds " + "\n" + "Your goal is to do planks for " +
                     (mplank + 30) + " seconds");
         }
@@ -197,7 +197,7 @@ public class Goals  extends AppCompatActivity{
             RunningResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.RunningGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.RunningGoals)).setTextSize(24);
             RunningResult.setText("You ran 1km in " + mrun + " seconds " + "\n" + "Your goal is to run 1k in " + (mrun - 20)
                     + " seconds");
 
@@ -209,7 +209,7 @@ public class Goals  extends AppCompatActivity{
             SquatResult.setText("nothing to display yet");
         }
         else{
-            ((TextView) findViewById(R.id.SquatsGoals)).setTextSize(30);
+            ((TextView) findViewById(R.id.SquatsGoals)).setTextSize(24);
 
             SquatResult.setText("You did " + msquat + " Squats " + "\n" + "Your goal is to do " + (msquat + 5) + " Squats");
 
