@@ -146,19 +146,19 @@ public class Result extends AppCompatActivity{
             }
 
             if(mpush <=4){
-                pushResult.setText("You did " + mpush + " pushups. You are very poor. The avg. no. of push-ups is 5-12. click on goals to improve.");
+                pushResult.setText("You did " + mpush + " pushups. You are very poor. click on goals to improve.");
             }
 
             if(mpush <=9 && mpush >= 5){
-                pushResult.setText("you did " + pushUps + " pushups. you are below average. The avg. no. of push-ups is 5-12. click on goals to improve.");
+                pushResult.setText("you did " + pushUps + " pushups. you are below average. click on goals to improve.");
             }
 
             if(mpush <= 19 && mpush >= 10){
-                pushResult.setText("you did " + pushUps + " pushups. you are good. The avg. no. of push-ups is 5-12. click on goals to improve.");
+                pushResult.setText("you did " + pushUps + " pushups. you are good. click on goals to improve.");
             }
 
             if(mpush >=20){
-                pushResult.setText("you did " + pushUps + " pushups. you are excellent. The avg. no. of push-ups is 5-12. click on goals to improve.");
+                pushResult.setText("you did " + pushUps + " pushups. you are excellent. click on goals to improve.");
             }
 
 
@@ -183,19 +183,19 @@ public class Result extends AppCompatActivity{
             }
 
             if(mpull <= 1){
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are very poor. The avg. no. of pull-ups is 2-5. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are very poor. click on goals to improve.");
             }
 
             if(mpull <= 5 && mpull >= 2){
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are average. The avg. no. of pull-ups is 2-5. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are average. click on goals to improve.");
             }
 
             if(mpull <= 10 && mpull >= 6){
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are good. The avg. no. of pull-ups is 2-5. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are good. click on goals to improve.");
             }
 
             if(mpull >= 10){
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are excellent. The avg. no. of pull-ups is 2-5. click on goals to improve.  ");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are excellent. click on goals to improve.  ");
             }
 
 
@@ -218,19 +218,19 @@ public class Result extends AppCompatActivity{
             }
 
             if(mcrunch <= 18){
-                CrunchResult.setText("You did " + crunches + " crunches. you are very poor. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are very poor. click on goals to improve.");
             }
 
             if(mcrunch <= 19 && mcrunch >= 38){
-                CrunchResult.setText("You did " + crunches + " crunches. you are average. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are average. click on goals to improve.");
             }
 
             if(mcrunch <= 39 && mcrunch >= 49){
-                CrunchResult.setText("You did " + crunches + " crunches. you are good. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are good. click on goals to improve.");
             }
 
             if(mcrunch >= 50){
-                CrunchResult.setText("You did " + crunches + " crunches. you are excellent. The avg. no. of Crunches is 20-39. click on goals to improve. but you don't need to, do you? ");
+                CrunchResult.setText("You did " + crunches + " crunches. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -248,19 +248,19 @@ public class Result extends AppCompatActivity{
 
 
             if(mplank <= 30){
-                PlankResult.setText("You did plank for " + plank + " seconds. you are very poor. The avg. time for Planks is 60-100s. click on goals to improve.");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are very poor. click on goals to improve.");
             }
 
-            if(mplank < 60 && mplank >= 31){
-                PlankResult.setText("You did plank for " + plank + " seconds. you are average. The avg. time for Planks is 60-100s. click on goals to improve.");
+            if(mplank <= 60 && mplank >= 31){
+                PlankResult.setText("You did plank for " + plank + " seconds. you are average. click on goals to improve.");
             }
 
             if(mplank <= 180 && mplank >= 60){
-                PlankResult.setText("You did plank for " + plank + " seconds. you are good. The avg. time for Planks is 60-100s. click on goals to improve.");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are good. click on goals to improve.");
             }
 
             if(mplank >= 181){
-                PlankResult.setText("You did plank for " + plank + " seconds. you are excellent. The avg. time for Planks is 60-100s. click on goals to improve. but you don't need to, do you? ");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
             //Running
@@ -277,19 +277,19 @@ public class Result extends AppCompatActivity{
 
 
             if(mrun >= 300){
-                RunningResult.setText("You ran for " + running + " seconds. you are very poor. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are very poor. click on goals to improve.");
             }
 
             if(mrun <= 301  && mrun >= 240 ){
-                RunningResult.setText("You ran for " + running + " seconds. you are average. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are average. click on goals to improve.");
             }
 
             if(mrun <= 241 && mrun >= 161){
-                RunningResult.setText("You ran for " + running + " seconds. you are good. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are good. click on goals to improve.");
             }
 
             if(mrun <= 160){
-                RunningResult.setText("You ran for " + running + " seconds. you are excellent. The avg. time for Running is 160-200s. click on goals to improve. but you don't need to, do you? ");
+                RunningResult.setText("You ran for " + running + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -307,19 +307,23 @@ public class Result extends AppCompatActivity{
 
 
             if(msquat <= 20){
-                SquatResult.setText("You did " + squats + " squats. you are very poor. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are very poor. but you can easily improve. click on goals to improve.");
             }
 
             if(msquat <= 21  && msquat >= 29 ){
-                SquatResult.setText("You did " + squats + " squats. you are average. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are average. click on goals to improve.");
             }
 
             if(msquat <= 30 && msquat >= 34){
-                SquatResult.setText("You did " + squats + " squats. you are good. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are good. click on goals to improve.");
             }
 
             if(msquat >= 35){
-                SquatResult.setText("You did " + squats + " squats. you are excellent. The avg. no. of Squats is 21-29. click on goals to improve. but you don't need to, do you? ");
+                SquatResult.setText("You did " + squats + " squats. you are excellent. click on goals to improve. but you don't need to, do you? ");
+            }
+
+            else if(msquat == -1){
+                SquatResult.setText("Nothing to display yet");
             }
 
 
@@ -343,19 +347,19 @@ public class Result extends AppCompatActivity{
             }
 
             if (mpush <= 4) {
-                pushResult.setText("you did " + mpush + " pushups. you are very poor. The avg. no. of push-ups is 20-25. click on goals to improve.");
+                pushResult.setText("you did " + mpush + " pushups. you are very poor. click on goals to improve.");
             }
 
             if (mpush <= 18 && mpush >= 10) {
-                pushResult.setText("you did " + pushUps + " pushups. you are below average. The avg. no. of push-ups is 20-25. click on goals to improve.");
+                pushResult.setText("you did " + pushUps + " pushups. you are below average. click on goals to improve.");
             }
 
             if (mpush <= 34 && mpush >= 19) {
-                pushResult.setText("you did " + pushUps + " pushups. you are good. The avg. no. of push-ups is 20-25. click on goals to improve.");
+                pushResult.setText("you did " + pushUps + " pushups. you are good. click on goals to improve.");
             }
 
             if (mpush >= 35) {
-                pushResult.setText("you did " + pushUps + " pushups. you are excellent. The avg. no. of push-ups is 20-25. click on goals to improve. but you don't need to, do you? ");
+                pushResult.setText("you did " + pushUps + " pushups. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -378,19 +382,19 @@ public class Result extends AppCompatActivity{
             }
 
             if (mpull <= 1) {
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are very poor. The avg. no. of pull-ups is 3-7. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are very poor. click on goals to improve.");
             }
 
             if (mpull <= 6 && mpull >= 2) {
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are average. The avg. no. of pull-ups is 3-7. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are average. click on goals to improve.");
             }
 
             if (mpull <= 15 && mpull >= 7) {
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are good. The avg. no. of pull-ups is 3-7. click on goals to improve.");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are good. click on goals to improve.");
             }
 
             if (mpull >= 16) {
-                pullResult.setText("You did " + pullUps + " Pull-ups. you are excellent. The avg. no. of pull-ups is 3-7. click on goals to improve. but you don't need to, do you? ");
+                pullResult.setText("You did " + pullUps + " Pull-ups. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -408,19 +412,19 @@ public class Result extends AppCompatActivity{
 
 
             if (mcrunch <= 18) {
-                CrunchResult.setText("You did " + crunches + " crunches. you are very poor. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are very poor. click on goals to improve.");
             }
 
             if (mcrunch <= 19 && mcrunch >= 38) {
-                CrunchResult.setText("You did " + crunches + " crunches. you are average. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are average. click on goals to improve.");
             }
 
             if (mcrunch <= 39 && mcrunch >= 49) {
-                CrunchResult.setText("You did " + crunches + " crunches. you are good. The avg. no. of Crunches is 20-39. click on goals to improve.");
+                CrunchResult.setText("You did " + crunches + " crunches. you are good. click on goals to improve.");
             }
 
             if (mcrunch >= 50) {
-                CrunchResult.setText("You did " + crunches + " crunches. you are excellent. The avg. no. of Crunches is 20-39. click on goals to improve. but you don't need to, do you? ");
+                CrunchResult.setText("You did " + crunches + " crunches. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -438,19 +442,19 @@ public class Result extends AppCompatActivity{
 
 
             if (mplank <= 30) {
-                PlankResult.setText("You did plank for " + plank + " seconds. you are very poor. The avg. time for Planks is 60-100s. click on goals to improve.");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are very poor. click on goals to improve.");
             }
 
             if (mplank <= 60 && mplank >= 31) {
-                PlankResult.setText("You did plank for " + plank + " seconds. you are average. The avg. time for Planks is 60-100s. click on goals to improve.");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are average. click on goals to improve.");
             }
 
             if (mplank <= 180 && mplank >= 60) {
-                PlankResult.setText("You did plank for " + plank + " seconds. you are good. The avg. time for Planks is 60-100s. click on goals to improve.");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are good. click on goals to improve.");
             }
 
             if (mplank >= 181) {
-                PlankResult.setText("You did plank for " + plank + " seconds. you are excellent. The avg. time for Planks is 60-100s. click on goals to improve. but you don't need to, do you? ");
+                PlankResult.setText("You did plank for " + plank + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
             //Running
@@ -467,19 +471,19 @@ public class Result extends AppCompatActivity{
 
 
             if (mrun >= 300) {
-                RunningResult.setText("You ran for " + running + " seconds. you are very poor. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are very poor. click on goals to improve.");
             }
 
             if (mrun <= 301 && mrun >= 240) {
-                RunningResult.setText("You ran for " + running + " seconds. you are average. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are average. click on goals to improve.");
             }
 
             if (mrun <= 241 && mrun >= 161) {
-                RunningResult.setText("You ran for " + running + " seconds. you are good. The avg. time for Running is 160-200s. click on goals to improve.");
+                RunningResult.setText("You ran for " + running + " seconds. you are good. click on goals to improve.");
             }
 
             if (mrun <= 160) {
-                RunningResult.setText("You ran for " + running + " seconds. you are excellent. The avg. time for Running is 160-200s. click on goals to improve. but you don't need to, do you? ");
+                RunningResult.setText("You ran for " + running + " seconds. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
@@ -497,19 +501,19 @@ public class Result extends AppCompatActivity{
 
 
             if (msquat <= 20) {
-                SquatResult.setText("You did " + squats + " squats. you are very poor. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are very poor. but you can easily improve. click on goals to improve.");
             }
 
             if (msquat <= 21 && msquat >= 29) {
-                SquatResult.setText("You did " + squats + " squats. you are average. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are average. click on goals to improve.");
             }
 
             if (msquat <= 30 && msquat >= 34) {
-                SquatResult.setText("You did " + squats + " squats. you are good. The avg. no. of Squats is 21-29. click on goals to improve.");
+                SquatResult.setText("You did " + squats + " squats. you are good. click on goals to improve.");
             }
 
             if (msquat >= 35) {
-                SquatResult.setText("You did " + squats + " squats. you are excellent. The avg. no. of Squats is 21-29. click on goals to improve. but you don't need to, do you? ");
+                SquatResult.setText("You did " + squats + " squats. you are excellent. click on goals to improve. but you don't need to, do you? ");
             }
 
 
